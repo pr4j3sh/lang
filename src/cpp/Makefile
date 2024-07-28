@@ -1,15 +1,18 @@
 CXX = g++
-CXXFLAGS = -Wall -std=c++11 -Iinclude
+CXXFLAGS = -Iinclude -Wall -Wextra
 TARGET = build/main
 SRC_DIR = src
-SRCS = $(shell find $(SRC_DIR) -name '*.cpp')
-OBJS = $(patsubst %.cpp, %.o, $(SRCS))
+SRC = $(shell find $(SRC_DIR) -name '*.cpp')
+OBJ_DIR = build/out
+OBJ = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+$(TARGET): $(OBJ)
+	$(CXX) $(OBJ) -o $(TARGET)
 
-%.o: %.cpp
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJ) $(TARGET)
+	rm -rf $(OBJ_DIR)
