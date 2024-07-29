@@ -2,6 +2,5 @@
 #define BASIC_H
 
 void hw();
-int add(int, int);
 
 #endif
