@@ -1,5 +1,5 @@
-#include "basic.h"
-#include "ds_array.h"
+#include "basic.hpp"
+#include "ds_array.hpp"
 #include "iostream"
 using namespace std;
 
@@ -8,8 +8,11 @@ int main() {
   // hw();
 
   // array
-  int n = 2;
+  int n;
+  cout << "> ";
+  cin >> n;
   string *arr = create_array(n);
+  // string arr[] = {"cool", "whew"};
   print_array(arr, n);
   return 0;
 }
