@@ -16,3 +16,4 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 clean:
 	rm -f $(OBJ) $(TARGET)
 	rm -rf $(OBJ_DIR)
+	rm -rf build

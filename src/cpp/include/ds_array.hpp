@@ -5,7 +5,8 @@
 using namespace std;
 
 string *create_array(int);
-void print_array(string *arr, int n);
+void print_array(string *, int);
+pair<string *, int> insert_beg(string *, int, string);
+void free_mem(string *);
 
 #endif
-
