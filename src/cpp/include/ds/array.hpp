@@ -1,5 +1,5 @@
-#ifndef DS_ARRAY_H
-#define DS_ARRAY_H
+#ifndef ARRAY_H
+#define ARRAY_H
 
 #include <iostream>
 using namespace std;
