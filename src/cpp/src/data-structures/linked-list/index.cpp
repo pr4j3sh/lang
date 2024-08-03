@@ -3,10 +3,6 @@
 using namespace std;
 
 void linked_list_func() {
-  int n;
-  cout << "> ";
-  cin >> n;
-
-  Node head = create_singly_linked_list(n);
+  Node *head = create_singly_linked_list();
   print_singly_linked_list(head);
 }

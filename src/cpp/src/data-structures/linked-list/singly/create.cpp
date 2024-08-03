@@ -2,26 +2,27 @@
 #include <iostream>
 using namespace std;
 
-Node create_singly_linked_list(int n) {
-  Node head;
-  head.next = nullptr;
-  for (int i = 0; i < n; i++) {
-    Node temp;
-    string val = "";
-    cout << "> ";
-    cin >> val;
-    temp.val = val;
-    cout << temp.val << endl;
-    cout << head.next << endl;
-    temp.next = head.next;
-    cout << temp.next << endl;
-    head.next = &temp;
-    cout << head.next << endl;
-  }
+Node *create_singly_linked_list() {
+  Node *head = nullptr;
+  Node *tail = nullptr;
 
-  cout << &head << endl;
-  for (Node *i = &head; i != nullptr; i = i->next) {
-    cout << i->val << endl;
+  char choice;
+  cout << "choice > ";
+  cin >> choice;
+  while (choice == 'a') {
+    string val;
+    cout << "val > ";
+    cin >> val;
+    Node *temp = new Node;
+    temp->val = val;
+    temp->next = nullptr;
+    if (head == nullptr)
+      head = temp;
+    else
+      tail->next = temp;
+    tail = temp;
+    cout << "choice > ";
+    cin >> choice;
   }
   return head;
 }
