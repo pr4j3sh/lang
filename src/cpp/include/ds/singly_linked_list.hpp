@@ -8,7 +8,8 @@ struct Node {
   Node *next;
 };
 
-Node *create_singly_linked_list();
-void print_singly_linked_list(Node *);
+Node *create();
+void print(Node *);
+Node *insert(Node *, string, int);
 
 #endif

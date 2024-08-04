@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Node *create_singly_linked_list() {
+Node *create() {
   Node *head = nullptr;
   Node *tail = nullptr;
 
