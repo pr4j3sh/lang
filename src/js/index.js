@@ -203,13 +203,114 @@ const ans = age < 18 ? "not adult" : "adult";
 
 // console.log(ans);
 
-let n = 3;
+// let n = 3;
+//
+// for (let i = 0; i < n; i++) {
+//   for (let j = n; j > 0; j--) {
+//     for (let k = i; k < n; k++) {
+//       process.stdout.write(`${j} `);
+//     }
+//   }
+//   process.stdout.write("$");
+// }
 
-for (let i = 0; i < n; i++) {
-  for (let j = n; j > 0; j--) {
-    for (let k = i; k < n; k++) {
-      process.stdout.write(`${j} `);
-    }
-  }
-  process.stdout.write("$");
+// switch
+
+// let letter = "e";
+//
+// switch (letter) {
+//   case "a":
+//     console.log("vowel");
+//     break;
+//   case "e":
+//     console.log("vowel");
+//     break;
+//   case "i":
+//     console.log("vowel");
+//     break;
+//   case "o":
+//     console.log("vowel");
+//     break;
+//   case "u":
+//     console.log("vowel");
+//     break;
+//
+//   default:
+//     console.log("not a vowel");
+//     break;
+// }
+
+// const ag = 13;
+//
+// switch (ag) {
+//   case ag < 18:
+//     console.log("not adult");
+//     break;
+//
+//   default:
+//     console.log("adult");
+//     break;
+// }
+
+// operators
+
+// arithmetic
+// + - addition
+// - - subtraction
+// * - multiplication
+// / - division
+// % - modulus
+
+// binary operators
+// || - OR
+// (a || b)
+// && - AND
+// (a && b)
+
+// console.log(true || true); // true
+// console.log(true || false); // true
+// console.log(false || false); // false
+// console.log(false || true); // true
+//
+// console.log(true && true); // true
+// console.log(true && false); // false
+// console.log(false && false); // false
+// console.log(false && true); // false
+
+// unary operator
+// | - bit wise OR
+// & - bit wise AND
+// ^ - bit wise XOR
+// ~ - bit wise NOT
+// << - left shift operator
+// >> - right shift operator
+
+let aa = 3; // 011 -> 110
+let bb = 5; // 101 -> 010
+
+// console.log(aa | bb);
+// console.log(aa & bb);
+// console.log(aa ^ bb);
+// console.log(~aa);
+
+// functions
+
+function sayHi(name) {
+  console.log("hi ", name);
 }
+
+sayHi("jane");
+sayHi("John");
+
+// function add(a, b) {
+//   return a + b;
+// }
+
+// const sum = add(2, 3);
+// const add = (a, b) => {
+//   return a + b;
+// };
+//
+// const sum = add(2, 3);
+//
+// console.log(sum);
