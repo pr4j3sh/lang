@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Node *create() {
+Node *create_sll() {
   Node *head = nullptr;
   Node *tail = nullptr;
 

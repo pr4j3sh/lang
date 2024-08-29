@@ -19,6 +19,9 @@ int main() {
   // array_func();
 
   // linked list
-  linked_list_func();
+  // linked_list_func();
+
+  // tree
+  tree_func();
   return 0;
 }

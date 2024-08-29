@@ -8,7 +8,7 @@ struct Node {
   Node *next;
 };
 
-Node *create();
+Node *create_sll();
 void print(Node *);
 Node *insert(Node *, string, int);
 

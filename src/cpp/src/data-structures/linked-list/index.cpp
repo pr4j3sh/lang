@@ -3,7 +3,7 @@
 using namespace std;
 
 void linked_list_func() {
-  Node *head = create();
+  Node *head = create_sll();
   print(head);
   int idx;
   cout << "> ";
