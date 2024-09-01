@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void free_mem(string *arr){
-  delete[] arr;
+int main() {
+  cout << "hi";
+  return 0;
 }
