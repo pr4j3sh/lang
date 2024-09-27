@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>HTML - links</title>
+    <style>
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/prajeshElEvEn">Link</a>
+    <a href="https://github.com/prajeshElEvEn" target="_self">Link self</a>
+    <a href="https://github.com/prajeshElEvEn" target="_blank">Link blank</a>
+    <a href="https://github.com/prajeshElEvEn" target="_parent">Link parent</a>
+    <a href="https://github.com/prajeshElEvEn" target="_top">Link top</a>
+
+    <!-- image as link -->
+    <a href="https://github.com/prajeshElEvEn">
+      <img
+        src="https://avatars.githubusercontent.com/u/75523737?v=4"
+        alt="External Image"
+        width="200px"
+        height="200px"
+      />
+    </a>
+
+    <!-- button as link -->
+    <button onclick="document.location='../intro/index.html'">
+      Go to Intro
+    </button>
+    <a href="https://github.com/prajeshElEvEn" title="Github">Hover me</a>
+    <a href="#mario">Jump to Mario</a>
+    <h2 id="mario">Mario</h2>
+  </body>
+</html>
