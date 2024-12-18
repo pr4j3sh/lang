@@ -1,0 +1,10 @@
+console.log("primitive ->");
+console.log(typeof 11);
+console.log(typeof "eleven");
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log("objects ->");
+console.log(typeof { 1: "one" });
+console.log(typeof [1, 2, 3]);
+console.log(typeof function hey() {});
