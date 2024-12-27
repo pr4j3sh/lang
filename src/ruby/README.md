@@ -1,0 +1,3 @@
+```bash
+ruby ./main.rb
+```
