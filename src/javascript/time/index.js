@@ -20,7 +20,6 @@ time = new Date(2002, 1, 17, 9, 15, 10, 413);
 console.log(time);
 
 time = new Date();
-console.log(time);
 console.log({
   year: time.getFullYear(),
   month: time.getMonth(),
@@ -42,5 +41,9 @@ console.log({
   day: time.getUTCDay(),
 });
 
-console.log(time.getTime());
 console.log(time.getTimezoneOffset());
+
+console.log(time.getTime());
+
+time = Date.now();
+console.log(time);
