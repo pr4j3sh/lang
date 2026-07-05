@@ -17,8 +17,8 @@ done
 # string operators
 echo "string operators"
 declare -A string_operators
-string_operators["equal_to"]='=='
-string_operators["not_equal_to"]='!=='
+string_operators["equal_to"]='='
+string_operators["not_equal_to"]='!='
 string_operators["less_than"]='<'
 string_operators["greater_than"]='>'
 
@@ -35,6 +35,6 @@ arithmetic_operators["multiplication"]='*'
 arithmetic_operators["division"]='/'
 arithmetic_operators["modulus"]='%'
 
-for i in "${arithmetic_operators[@]}"; do
-  echo "$i"
+for i in ${arithmetic_operators[@]}; do
+  echo $i
 done
