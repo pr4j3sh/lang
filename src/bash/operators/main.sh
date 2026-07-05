@@ -10,8 +10,8 @@ comparison_operators["less_than_or_equal_to"]='-le'
 comparison_operators["greater_than"]='-gt'
 comparison_operators["greater_than_or_equal_to"]='-ge'
 
-for i in ${comparison_operators[@]}; do
-  echo $i
+for i in "${comparison_operators[@]}"; do
+  echo "$i"
 done
 
 # string operators
@@ -22,8 +22,8 @@ string_operators["not_equal_to"]='!='
 string_operators["less_than"]='<'
 string_operators["greater_than"]='>'
 
-for i in ${string_operators[@]}; do
-  echo $i
+for i in "${string_operators[@]}"; do
+  echo "$i"
 done
 
 # arithmetic operators
