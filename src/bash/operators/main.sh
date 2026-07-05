@@ -35,6 +35,6 @@ arithmetic_operators["multiplication"]='*'
 arithmetic_operators["division"]='/'
 arithmetic_operators["modulus"]='%'
 
-for i in ${arithmetic_operators[@]}; do
-  echo $i
+for i in "${arithmetic_operators[@]}"; do
+  echo "$i"
 done
