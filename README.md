@@ -1,3 +1,3 @@
 # lang
 
-> learning programming languages
+here lies the programming languages I'm learning
